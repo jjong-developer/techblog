@@ -1,0 +1,126 @@
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #b6b6b6;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    /*background: rgba(33, 122, 244, 0.1);*/
+}
+.area-wrap {
+    padding-top: 130px;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+.title {
+    margin-bottom: 20px;
+}
+.sub-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.btn-wrap button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    min-height: 50px;
+    border: 1px solid #a0a0a0;
+    font-size: 15px;
+}
+.btn-wrap button:after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 15px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.2 20.6"><path d="M2.4 18.7l8.3-8.3-8.3-8.3" fill="none" stroke="%234b4b4b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 25px 14px;
+    transform: rotate(90deg);
+}
+.btn-wrap button:hover {
+    background: #424242;
+    color: #ffffff;
+    border: 1px solid #1d1b1b;
+    transition: all 0.2s;
+}
+.btn-wrap button:hover:after {
+    content: '';
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.2 20.6"><path d="M2.4 18.7l8.3-8.3-8.3-8.3" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+.loading {
+    /*display: none;*/
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.loading > img {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.dimmed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.category {
+    text-transform: capitalize;
+    color: #3e87f8;
+    font-size: 14px;
+    font-weight: 500;
+}
+.date {
+    color: #969696;
+    font-size: 13px;
+}
+a.link {
+    display: block;
+    width: max-content;
+    margin-bottom: 5px;
+    color: #0070d1;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+}
+a.link:hover {
+    opacity: 0.8;
+}
+
+// 페이지네이션은 나중에 컴포넌트에 폴더명 별도로 분기하기
+.paging-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 50px 0 30px 0;
+}
+.paging-wrap a {
+    padding: 2px 10px;
+}
+.paging-wrap a.active {
+    background: #3e87f8;
+    border-radius: 50%;
+    color: #ffffff;
+}
