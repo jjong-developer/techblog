@@ -4,7 +4,7 @@ import App from './App.vue';
 
 import '@/assets/scss/base/reset.scss'; /* 초기화 세팅 */
 import '@/assets/scss/common/common.scss'; /* 공통 레이아웃 */
-import '@/assets/scss/common/header.scss'; /* 상단 */
+import '@/assets/scss/common/footer.scss'; /* 하단 */
 
 const pinia = createPinia();
 const app = createApp(App);
