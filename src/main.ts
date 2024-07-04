@@ -7,7 +7,8 @@ import '@/assets/scss/base/reset.scss'; /* 초기화 세팅 */
 import '@/assets/scss/common/common.scss';
 
 /* 공통 레이아웃 */
-import '@/assets/scss/common/footer.scss';
+import '@/assets/scss/common/header.scss'; // 헤더
+import '@/assets/scss/common/footer.scss'; // 푸터
 
 const pinia: any = createPinia();
 const app: any = createApp(App).use(router);

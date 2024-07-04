@@ -1,0 +1,191 @@
+.header-wrap {
+    margin-bottom: 65px;
+    text-transform: capitalize;
+}
+.header-wrap .navi {
+    border-bottom: 1px solid #e2e2e2;
+}
+.header-wrap .navi .menu {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.header-wrap .navi .sidebar-menu {
+    display: none;
+}
+.header-wrap .navi .sidebar-menu.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    width: 320px;
+    height: 100%;
+    padding: 0 40px;
+    background: #ffffff;
+}
+.header-wrap .navi .sidebar-menu .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20"><style>.st2{fill:none;stroke:%23333333;stroke-width:1.8;stroke-linecap:round}</style><g><path class="st2" d="M3 2.5l15 15M18 2.5l-15 15"/></g></svg>');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 45%;
+    opacity: 0.6;
+}
+.header-wrap .navi .sidebar-menu .close-btn:hover {
+    opacity: 1;
+    transition: all 0.2s;
+}
+.header-wrap .navi .sidebar-menu .sidebar-header {
+
+}
+.header-wrap .navi .sidebar-menu .sidebar-header a {
+    display: block;
+    padding: 60px 0 15px 0;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #bdbdbd;
+    text-transform: lowercase;
+    font-size: 21px;
+    font-weight: 600;
+}
+.header-wrap .navi .sidebar-menu ul {
+
+}
+.header-wrap .navi .sidebar-menu ul li {
+    margin-top: 30px;
+}
+.header-wrap .navi .sidebar-menu ul li:first-child {
+    margin-top: 0;
+}
+.header-wrap .navi .sidebar-menu ul li a {
+    display: block;
+    font-weight: 600;
+}
+.header-wrap .navi .sidebar-menu ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px
+}
+.header-wrap .navi .sidebar-menu ul.sidebar-two-depth-menu {
+
+}
+.header-wrap .navi .sidebar-menu ul.sidebar-two-depth-menu li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 12px 0 0 14px;
+}
+.header-wrap .navi .sidebar-menu ul.sidebar-two-depth-menu li::before {
+    content: 'ㄴ';
+}
+.header-wrap .navi .sidebar-menu ul.sidebar-two-depth-menu li a {
+    font-size: 14px;
+    font-weight: 400;
+}
+.header-wrap .navi .menu ul {
+    display: flex;
+    flex-basis: 70%;
+    gap: 50px;
+}
+.header-wrap .navi .menu ul li a {
+    color: #2c2828;
+    font-weight: 700;
+}
+.header-wrap .navi .menu ul li a:hover {
+    color: #3e87f8;
+    transition: color 0.2s;
+}
+.header-wrap .logo {
+    margin-top: 70px;
+    text-align: center;
+    text-transform: initial;
+}
+.header-wrap .logo h1 a {
+    font-size: 42px;
+}
+.header-wrap .logo h1 a:hover {
+    opacity: 0.7;
+    transition: color 0.2s;
+}
+.header-wrap .logo p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.menu-open-btn {
+    margin-right: 60px;
+}
+.menu-open-btn svg {
+    width: 22px;
+    vertical-align: middle;
+}
+.menu-open-btn svg:hover {
+    opacity: 0.7;
+    transition: color 0.2s;
+}
+.navi-utils {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 30%;
+}
+.navi-utils .search-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" xml:space="preserve"><g transform="translate(-1160.543 -67.822)"><circle cx="1168.5" cy="75.39" r="7.5" fill="none"/><circle cx="1168.5" cy="75.39" r="6.58" fill="none" stroke="%234b4b4b" stroke-width="1.8" /><path fill="none" stroke="%234b4b4b" stroke-width="1.8" d="M1172.5 80.39l6 6"/></g></svg>');
+    background-position: 50% 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin-right: 25px;
+}
+.navi-utils .search-btn:hover {
+    opacity: 0.7;
+}
+.navi-utils .search-btn.active {
+    position: absolute;
+    bottom: 0;
+    right: calc(100% - 250px);
+    z-index: 1;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20"><style>.st2{fill:none;stroke:%23666666;stroke-width:1.8;stroke-linecap:round}</style><g><path class="st2" d="M3 2.5l15 15M18 2.5l-15 15"/></g></svg>');
+    background-size: 50%;
+}
+.navi-utils input.search-keyword {
+    display: none;
+}
+.navi-utils input.search-keyword.active {
+    position: relative;
+    display: block;
+    margin-right: 25px;
+}
+.navi-utils input.search-keyword {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #000000;
+    font-size: 14px;
+}
+.navi-utils .portfolio-link {
+    padding: 5px 13px 5px 13px;
+    border: 1px solid #3e87f8;
+    border-radius: 30px;
+    color: #3e87f8;
+    font-weight: 700;
+    font-size: 14px;
+}
+.navi-utils .portfolio-link:hover {
+    background: #3e87f8;
+    color: #ffffff;
+    transition: color 0.2s;
+}
+
+/* [헤더] 예외 페이지 */
+.header-wrap.side-header .logo h1 a {
+    font-size: 32px;
+}
+/* // [헤더] 예외 페이지 */
