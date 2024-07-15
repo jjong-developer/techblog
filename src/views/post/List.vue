@@ -1,15 +1,17 @@
 <template>
-    <main>
-
+    <!-- 게시글 보기 -->
+    <!--<script>-->
+    <!--    console.log(document.querySelectorAll('.route-link'))-->
+    <!--</script>-->
+    <div class="post post-list-area">
         <div class="container">
-            <!-- 전체 글 -->
-            <div class="post-gallery type-1">
-                <h2 class="title">전체 글</h2>
+            <h2 class="category-name">blog <span>(85)</span></h2>
+            <div class="post-gallery type-4">
                 <ul>
                     <li class="post-list-item">
                         <RouterLink :to="{ name: 'view' }" class="post-box">
                             <div class="post-thumbnail main-event-thumbnail">
-                                <img src="@/assets/images/bg/no_img.jpg">
+                                <img src="@/assets/images/bg/no_img.jpg" alt="">
                             </div>
                             <div class="post-info">
                                 <p class="category">카테고리</p>
@@ -20,22 +22,9 @@
                         </RouterLink>
                     </li>
                     <li class="post-list-item">
-                        <RouterLink :to="{ name: 'view' }" class="post-box">
-                            <div class="post-thumbnail">
-                                <img src="@/assets/images/bg/no_img.jpg">
-                            </div>
-                            <div class="post-info">
-                                <p class="category">카테고리</p>
-                                <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
-                                <p class="post-content">게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다.</p>
-                                <span class="date">2023.07.12</span>
-                            </div>
-                        </RouterLink>
-                    </li>
-                    <li class="post-list-item">
                         <a href="#!" class="post-box">
                             <div class="post-thumbnail">
-                                <img src="@/assets/images/bg/no_img.jpg">
+                                <img src="@/assets/images/bg/no_img.jpg" alt="">
                             </div>
                             <div class="post-info">
                                 <p class="category">카테고리</p>
@@ -48,7 +37,7 @@
                     <li class="post-list-item">
                         <a href="#!" class="post-box">
                             <div class="post-thumbnail">
-                                <img src="@/assets/images/bg/no_img.jpg">
+                                <img src="@/assets/images/bg/no_img.jpg" alt="">
                             </div>
                             <div class="post-info">
                                 <p class="category">카테고리</p>
@@ -61,7 +50,20 @@
                     <li class="post-list-item">
                         <a href="#!" class="post-box">
                             <div class="post-thumbnail">
-                                <img src="@/assets/images/bg/no_img.jpg">
+                                <img src="@/assets/images/bg/no_img.jpg" alt="">
+                            </div>
+                            <div class="post-info">
+                                <p class="category">카테고리</p>
+                                <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
+                                <p class="post-content">게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다.</p>
+                                <span class="date">2023.07.12</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="post-list-item">
+                        <a href="#!" class="post-box">
+                            <div class="post-thumbnail">
+                                <img src="@/assets/images/bg/no_img.jpg" alt="">
                             </div>
                             <div class="post-info">
                                 <p class="category">카테고리</p>
@@ -72,86 +74,31 @@
                         </a>
                     </li>
                 </ul>
-
-                <div class="btn-wrap">
-                    <button type="button">더 보기</button>
-                </div>
             </div>
-            <!-- // 전체 글 -->
-        </div>
-
-        <div class="area-wrap">
-            <div class="container">
-                <!-- 인기 글 -->
-                <h2 class="title">인기 글</h2>
-                <div class="post-gallery type-2">
-                    <ul>
-                        <li class="post-list-item">
-                            <a href="#!" class="post-box">
-                                <div class="post-thumbnail">
-                                    <img src="@/assets/images/bg/no_img.jpg">
-                                </div>
-                                <div class="post-info">
-                                    <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
-                                    <span class="date">2023.07.12</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="post-list-item">
-                            <a href="#!" class="post-box">
-                                <div class="post-thumbnail">
-                                    <img src="@/assets/images/bg/no_img.jpg">
-                                </div>
-                                <div class="post-info">
-                                    <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
-                                    <span class="date">2023.07.12</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="post-list-item">
-                            <a href="#!" class="post-box">
-                                <div class="post-thumbnail">
-                                    <img src="@/assets/images/bg/no_img.jpg">
-                                </div>
-                                <div class="post-info">
-                                    <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
-                                    <span class="date">2023.07.12</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="post-list-item">
-                            <a href="#!" class="post-box">
-                                <div class="post-thumbnail">
-                                    <img src="@/assets/images/bg/no_img.jpg">
-                                </div>
-                                <div class="post-info">
-                                    <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
-                                    <span class="date">2023.07.12</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- // 인기 글 -->
+            <div class="paging-wrap">
+                <a href="#!" class="active">
+                    <span>1</span>
+                </a>
+                <a href="#!">
+                    <span>2</span>
+                </a>
+                <a href="#!">
+                    <span>3</span>
+                </a>
+                <a href="#!">
+                    <span>4</span>
+                </a>
+                <a href="#!">
+                    <span>5</span>
+                </a>
+                <a href="#!">
+                    <span>6</span>
+                </a>
+                <a href="#!">
+                    <span>7</span>
+                </a>
             </div>
         </div>
-
-        <!-- 전체 글 보기 -->
-        <div class="writing-view-all">
-            <a href="#!">전체 글 보기</a>
-<!--            <button id="topBtn" class="top-btn" type="button">-->
-<!--                <img src="./images/top-arrow.png" alt="top">-->
-<!--            </button>-->
-        </div>
-        <!-- // 전체 글 보기 -->
-
-    </main>
+    </div>
+    <!-- // 게시글 보기 -->
 </template>
-
-<script lang="ts" setup>
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>

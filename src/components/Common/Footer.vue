@@ -1,5 +1,6 @@
 <template>
     <footer class="footer-wrap">
+
         <div class="container">
             <div class="side-wrap">
                 <div class="side-link">
@@ -16,13 +17,14 @@
                     </ul>
                 </div>
                 <div class="side-blog-info">
-                    <!--            class="visit-counter" -->
+<!--                    <div class="visit-counter"></div>-->
                     <span>today</span><span class="visit-today-num">483</span>
                     <span>total</span><span class="visit-total-num">1,215,370</span>
                 </div>
             </div>
             <div class="copyright">made by JJONG</div>
         </div>
+
     </footer>
 </template>
 
