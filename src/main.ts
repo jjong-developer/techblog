@@ -3,12 +3,21 @@ import { createPinia } from 'pinia'; /* 기존의 상태 관리 라이브러리 
 import App from './App.vue';
 import router from './router';
 
-import '@/assets/scss/base/reset.scss'; /* 초기화 세팅 */
-import '@/assets/scss/common/common.scss';
+/* 폰트 설정 */
+import '@/assets/scss/base/font.scss';
+
+/* 초기화 설정 */
+import '@/assets/scss/base/reset.scss';
 
 /* 공통 레이아웃 */
+import '@/assets/scss/common/common.scss'; // 공통
 import '@/assets/scss/common/header.scss'; // 헤더
 import '@/assets/scss/common/footer.scss'; // 푸터
+
+/* 뷰 페이지 */
+import '@/assets/scss/views/main.scss'; // 메인 페이지
+import '@/assets/scss/views/list.scss'; // 리스트 페이지
+import '@/assets/scss/views/view.scss'; // 뷰어 페이지
 
 const pinia: any = createPinia();
 const app: any = createApp(App).use(router);

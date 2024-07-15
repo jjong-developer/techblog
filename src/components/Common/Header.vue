@@ -12,10 +12,10 @@
                 </button>
                 <ul>
                     <li>
-                        <a href="#home" route-link="./home.html" class="route-link">home</a>
+                        <RouterLink :to="{ name: 'main' }">home</RouterLink>
                     </li>
                     <li>
-                        <a href="#blog" route-link="./src/pages/post/list.html" class="route-link">blog</a>
+                        <RouterLink :to="{ name: 'list' }">blog</RouterLink>
                     </li>
                 </ul>
                 <div class="navi-utils">
@@ -29,31 +29,31 @@
             <div class="sidebar-menu">
                 <button type="button" id="closeBtn" class="close-btn" title="닫기"></button>
                 <div class="sidebar-header">
-                    <a href="#home" route-link="./home.html" class="route-link">jjong_log&#129311;</a>
+                    <RouterLink :to="{ name: 'main' }">jjong_log&#129311;</RouterLink>
                 </div>
                 <ul class="sidebar-one-depth-menu">
                     <li>
-                        <a href="#!">home</a>
+                        <RouterLink :to="{ name: 'main' }">home</RouterLink>
                     </li>
                     <li>
-                        <a href="#!">
-                            <span class="category-total-num">blog (0)</span>
-                        </a>
+<!--                        <RouterLink :to="{ name: '#!' }">-->
+<!--                            <span class="category-total-num">blog (0)</span>-->
+<!--                        </RouterLink>-->
                         <ul class="sidebar-two-depth-menu">
                             <li>
-                                <a href="#!">test</a>
+<!--                                <RouterLink :to="{ name: '#!' }">test</RouterLink>-->
                             </li>
                             <li>
-                                <a href="#!">test</a>
+<!--                                <RouterLink :to="{ name: '#!' }">test</RouterLink>-->
                             </li>
                             <li>
-                                <a href="#!">test</a>
+<!--                                <RouterLink :to="{ name: '#!' }">test</RouterLink>-->
                             </li>
                             <li>
-                                <a href="#!">test</a>
+<!--                                <RouterLink :to="{ name: '#!' }">test</RouterLink>-->
                             </li>
                             <li>
-                                <a href="#!">test</a>
+<!--                                <RouterLink :to="{ name: '#!' }">test</RouterLink>-->
                             </li>
                         </ul>
                     </li>
@@ -63,7 +63,7 @@
         </nav>
         <div class="container logo">
             <h1>
-                <a href="#home" route-link="./home.html" class="route-link">jjong_log</a>
+                <RouterLink :to="{ name: 'main' }">jjong_log</RouterLink>
             </h1>
             <p>좋아하는 걸 좋아하는 쫑&#129311;</p>
         </div>
