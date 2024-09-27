@@ -29,7 +29,7 @@
             <div class="sidebar-menu">
                 <button type="button" id="closeBtn" class="close-btn" title="닫기"></button>
                 <div class="sidebar-header">
-                    <RouterLink :to="{ name: 'main' }">jjong_log&#129311;</RouterLink>
+                    <RouterLink :to="{ name: 'main' }">jjong.log&#129311;</RouterLink>
                 </div>
                 <ul class="sidebar-one-depth-menu">
                     <li>
@@ -63,9 +63,9 @@
         </nav>
         <div class="container logo">
             <h1>
-                <RouterLink :to="{ name: 'main' }">jjong_log</RouterLink>
+                <RouterLink :to="{ name: 'main' }">jjong.log</RouterLink>
             </h1>
-            <p>좋아하는 걸 좋아하는 쫑&#129311;</p>
+<!--            <p>좋아하는 걸 좋아하는 쫑&#129311;</p>-->
         </div>
     </header>
 </template>
