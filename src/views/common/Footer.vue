@@ -22,7 +22,7 @@
                     <span>total</span><span class="visit-total-num">1,215,370</span>
                 </div>
             </div>
-            <div class="copyright">made by JJONG</div>
+            <div class="copyright">Copyright © 2024 jjong</div>
         </div>
 
     </footer>

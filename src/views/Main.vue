@@ -32,45 +32,6 @@
                             </div>
                         </RouterLink>
                     </li>
-                    <li class="post-list-item">
-                        <a href="#!" class="post-box">
-                            <div class="post-thumbnail">
-                                <img src="@/assets/images/bg/no_img.jpg">
-                            </div>
-                            <div class="post-info">
-                                <p class="category">카테고리</p>
-                                <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
-                                <p class="post-content">게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다.</p>
-                                <span class="date">2023.07.12</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="post-list-item">
-                        <a href="#!" class="post-box">
-                            <div class="post-thumbnail">
-                                <img src="@/assets/images/bg/no_img.jpg">
-                            </div>
-                            <div class="post-info">
-                                <p class="category">카테고리</p>
-                                <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
-                                <p class="post-content">게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다.</p>
-                                <span class="date">2023.07.12</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="post-list-item">
-                        <a href="#!" class="post-box">
-                            <div class="post-thumbnail">
-                                <img src="@/assets/images/bg/no_img.jpg">
-                            </div>
-                            <div class="post-info">
-                                <p class="category">카테고리</p>
-                                <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
-                                <p class="post-content">게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다. 게시글 내용 입니다.</p>
-                                <span class="date">2023.07.12</span>
-                            </div>
-                        </a>
-                    </li>
                 </ul>
 
                 <div class="btn-wrap">
@@ -114,7 +75,7 @@
                                     <img src="@/assets/images/bg/no_img.jpg">
                                 </div>
                                 <div class="post-info">
-                                    <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
+                                    <p class="post-title">게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.   게시글 제목 입니다. 게시글 제목 입니다. 게시글 제목 입니다.</p>
                                     <span class="date">2023.07.12</span>
                                 </div>
                             </a>
