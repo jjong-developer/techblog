@@ -24,6 +24,7 @@
                 align-items: center;
                 justify-content: flex-end;
                 flex-basis: 30%;
+                gap: 25px;
                 input {
                     &.search-keyword {
                         display: none;
@@ -46,7 +47,6 @@
                     background-position: 50% 50%;
                     background-size: 20px;
                     background-repeat: no-repeat;
-                    margin-right: 25px;
                     &:hover {
                         opacity: 0.7;
                     }
@@ -60,19 +60,6 @@
                         height: 30px;
                         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20"><style>.st2{fill:none;stroke:%23666666;stroke-width:1.8;stroke-linecap:round}</style><g><path class="st2" d="M3 2.5l15 15M18 2.5l-15 15"/></g></svg>');
                         background-size: 50%;
-                    }
-                }
-                .portfolio-link {
-                    padding: 5px 13px 5px 13px;
-                    border: 1px solid #3e87f8;
-                    border-radius: 30px;
-                    color: #3e87f8;
-                    font-weight: 700;
-                    font-size: 14px;
-                    &:hover {
-                        background-color: #3e87f8;
-                        color: #ffffff;
-                        transition: color 0.2s;
                     }
                 }
             }

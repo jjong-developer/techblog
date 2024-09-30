@@ -1,7 +1,7 @@
 ::selection {
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
-    background-color: rgba(139, 92, 246.1);
+    background-color: #55b8e1;
     color: #ffffff;
 }
 body {
@@ -119,6 +119,21 @@ a {
     }
 }
 
+// [타입-1] 버튼
+.link-btn-type-1 {
+    padding: 5px 13px 5px 13px;
+    border: 1px solid #3e87f8;
+    border-radius: 30px;
+    color: #3e87f8;
+    font-weight: 700;
+    font-size: 14px;
+    &:hover {
+        background-color: #3e87f8;
+        color: #ffffff;
+        transition: color 0.2s;
+    }
+}
+
 // 페이지네이션은 나중에 컴포넌트에 폴더명 별도로 분기하기
 .paging-wrap {
     display: flex;
@@ -212,7 +227,7 @@ a {
     &.type-1 {
         ul {
             display: grid;
-            grid-template-columns: repeat(3, 350px);
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: 70px;
             .post-list-item {
                 &:first-child {
@@ -246,14 +261,12 @@ a {
                     .post-thumbnail {
                         font-size: 0;
                         img {
-                            width: 350px;
                             height: 210px;
                             border: none !important;
                         }
                     }
                     .post-thumbnail.main-event-thumbnail {
                         img {
-                            width: 350px;
                             height: 250px;
                         }
                     }

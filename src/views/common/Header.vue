@@ -21,7 +21,8 @@
                 <div class="navi-utils">
                     <button type="button" id="searchBtn" class="search-btn"></button>
                     <input type="text" name="search" autocomplete="off" id="searchKeyword" class="search-keyword" placeholder="검색어를 입력해주세요." />
-                    <a href="https://jjong-developer.github.io/" target="_blank" class="portfolio-link">portfolio</a>
+                    <a href="https://jjong-developer.github.io/" target="_blank" class="link-btn-type-1">Introduction</a>
+                    <RouterLink :to="{ name: 'signin' }" class="link-btn-type-1">Sign in</RouterLink>
                 </div>
             </div>
 
