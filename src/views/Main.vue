@@ -1,6 +1,5 @@
 <template>
     <main>
-
         <div class="container">
             <!-- 전체 글 -->
             <div class="post-gallery type-1">
@@ -105,7 +104,6 @@
 <!--            </button>-->
         </div>
         <!-- // 전체 글 보기 -->
-
     </main>
 </template>
 

@@ -66,7 +66,7 @@
             <h1>
                 <RouterLink :to="{ name: 'main' }">jjong.log</RouterLink>
             </h1>
-<!--            <p>좋아하는 걸 좋아하는 쫑&#129311;</p>-->
+            <p>좋아하는 걸 좋아하는 쫑&#129311;</p>
         </div>
     </header>
 </template>
