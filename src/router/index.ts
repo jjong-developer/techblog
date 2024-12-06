@@ -1,8 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Main from '@/views/Main.vue'; // 메인 페이지
-import Signin from '@/views/user/Signin.vue'; // 로그인 페이지
-import List from '@/views/post/List.vue'; // 리스트 페이지
-import View from '@/views/post/View.vue'; // 상세 페이지
+import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,7 +6,7 @@ const router = createRouter({
         {
             path: '/',
             name: 'main',
-            component: Main
+            component: () => import('@/views/Main.vue')
         },
         {
             path: '/signin',
