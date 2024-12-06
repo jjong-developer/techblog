@@ -3,11 +3,11 @@
         <!--<div id="loading" class="loading">-->
         <!--	<img src="../images/loading.gif" alt="">-->
         <!--</div>-->
-        <div class="dimmed"></div>
+        <div class="dimmed" @mouseup="dimHandler()"></div>
 
         <nav class="navi">
             <div class="container menu">
-                <button type="button" id="menuOpenBtn" class="menu-open-btn">
+                <button type="button" class="menu-open-btn" @click="openHeaderMenuHandler()">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 82" xml:space="preserve"><path class="st0" d="M117 6H0M117 41H0M117 76H0" style="fill:none;stroke:#222222;stroke-width:11;stroke-miterlimit:10"/></svg>
                 </button>
                 <ul>
@@ -19,16 +19,20 @@
                     </li>
                 </ul>
                 <div class="navi-utils">
-                    <button type="button" id="searchBtn" class="search-btn"></button>
-                    <input type="text" name="search" autocomplete="off" id="searchKeyword" class="search-keyword" placeholder="검색어를 입력해주세요." />
+                    <input type="text" name="search" autocomplete="off" class="search-keyword" placeholder="검색어를 입력해주세요." />
+                    <button type="button" class="search-btn" @click="searchHandler($event)"></button>
                     <a href="https://jjong-developer.github.io/" target="_blank" class="link-btn-type-1">Introduction</a>
                     <RouterLink :to="{ name: 'signin' }" class="link-btn-type-1">Sign in</RouterLink>
                 </div>
+<!--                <div class="navi-interface">-->
+<!--                    <a href="https://jjong-developer.github.io/" target="_blank" class="link-btn-type-1">Introduction</a>-->
+<!--                    <RouterLink :to="{ name: 'signin' }" class="link-btn-type-1">Sign in</RouterLink>-->
+<!--                </div>-->
             </div>
 
             <!-- 사이드 메뉴 -->
             <div class="sidebar-menu">
-                <button type="button" id="closeBtn" class="close-btn" title="닫기"></button>
+                <button type="button" class="close-btn" @click="closeHeaderMenuHandler()"></button>
                 <div class="sidebar-header">
                     <RouterLink :to="{ name: 'main' }">jjong.log&#129311;</RouterLink>
                 </div>
@@ -63,16 +67,40 @@
             <!-- // 사이드 메뉴 -->
         </nav>
         <div class="container logo">
-            <h1>
-                <RouterLink :to="{ name: 'main' }">jjong.log</RouterLink>
-            </h1>
-            <p>좋아하는 걸 좋아하는 쫑&#129311;</p>
+<!--            <h1>-->
+<!--                <RouterLink :to="{ name: 'main' }">jjong.log</RouterLink>-->
+<!--            </h1>-->
+<!--            <p>좋아하는 걸 좋아하는 쫑&#129311;</p>-->
         </div>
     </header>
 </template>
 
 <script lang="ts" setup>
+import { useHeader } from '@/composable/useHeader'
 
+const { openHeaderMenu, closeHeaderMenu, closeDim, search } = useHeader()
+
+const openHeaderMenuHandler = () => {
+    openHeaderMenu()
+}
+
+const closeHeaderMenuHandler = () => {
+    closeHeaderMenu()
+}
+
+const dimHandler = () => {
+    closeDim()
+}
+
+/**
+ * 통합 검색
+ */
+const searchHandler = (event: any) => {
+    let searchKeywordElement: any = document.querySelector('.search-keyword')
+    let word: any = searchKeywordElement.value
+
+    search(event, word)
+}
 </script>
 
 <style lang="scss" scoped>
