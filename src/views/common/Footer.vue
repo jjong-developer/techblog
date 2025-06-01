@@ -1,6 +1,5 @@
 <template>
     <footer class="footer-wrap">
-
         <div class="container">
             <div class="side-wrap">
                 <div class="side-link">
@@ -22,9 +21,8 @@
                     <span>total</span><span class="visit-total-num">1,215,370</span>
                 </div>
             </div>
-            <div class="copyright">Copyright © 2024 jjong</div>
+            <div class="copyright">Copyright © 2025 jjong</div>
         </div>
-
     </footer>
 </template>
 

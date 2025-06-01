@@ -19,8 +19,10 @@
                     </li>
                 </ul>
                 <div class="navi-utils">
-                    <input type="text" name="search" autocomplete="off" class="search-keyword" placeholder="검색어를 입력해주세요." />
-                    <button type="button" class="search-btn" @click="searchHandler($event)"></button>
+                    <div class="search-wrap">
+                        <input type="text" name="search" autocomplete="off" class="search-keyword" placeholder="검색어를 입력해주세요." />
+                        <button type="button" class="search-btn" @click="searchHandler($event)"></button>
+                    </div>
                     <a href="https://jjong-portfolio.web.app/" target="_blank" class="link-btn-type-1">Introduction</a>
                     <RouterLink :to="{ name: 'signin' }" class="link-btn-type-1">Sign in</RouterLink>
                 </div>
@@ -67,17 +69,16 @@
             <!-- // 사이드 메뉴 -->
         </nav>
         <div class="container logo">
-<!--            <h1>-->
-<!--                <RouterLink :to="{ name: 'main' }">jjong.log</RouterLink>-->
-<!--            </h1>-->
-<!--            <p>좋아하는 걸 좋아하는 쫑&#129311;</p>-->
+            <h1>
+                <RouterLink :to="{ name: 'main' }">jjong.log</RouterLink>
+            </h1>
+            <p>좋아하는 걸 좋아하는 쫑&#129311;</p>
         </div>
     </header>
 </template>
 
 <script lang="ts" setup>
 import { useHeader } from '@/composable/useHeader'
-
 const { openHeaderMenu, closeHeaderMenu, closeDim, search } = useHeader()
 
 const openHeaderMenuHandler = () => {

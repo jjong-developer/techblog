@@ -1,3 +1,3 @@
 # 개발 기술 블로그
 ## 사용 기술
-HTML5, CSS3, javscript(typescript), scss, firebase v11.6.0
+HTML5, CSS3(SCSS), javscript(typescript), firebase v14.5.1

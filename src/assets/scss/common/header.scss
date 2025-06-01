@@ -23,43 +23,45 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                flex-basis: 30%;
+                flex-basis: 100%;
                 gap: 25px;
-                input {
-                    &.search-keyword {
-                        display: none;
-                        width: 100%;
-                        height: 30px;
-                        border-bottom: 1px solid #000000;
-                        font-size: 14px;
-                        &.active {
-                            position: relative;
-                            display: block;
-                            margin-right: 25px;
+                .search-wrap {
+                    position: relative;
+                    input {
+                        &.search-keyword {
+                            display: none;
+                            width: 100%;
+                            height: 30px;
+                            border-bottom: 1px solid #000000;
+                            font-size: 14px;
+                            &.active {
+                                position: relative;
+                                display: block;
+                            }
                         }
                     }
-                }
-                .search-btn {
-                    position: relative;
-                    width: 30px;
-                    height: 30px;
-                    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" xml:space="preserve"><g transform="translate(-1160.543 -67.822)"><circle cx="1168.5" cy="75.39" r="7.5" fill="none"/><circle cx="1168.5" cy="75.39" r="6.58" fill="none" stroke="%234b4b4b" stroke-width="1.8" /><path fill="none" stroke="%234b4b4b" stroke-width="1.8" d="M1172.5 80.39l6 6"/></g></svg>');
-                    background-position: 50% 50%;
-                    background-size: 20px;
-                    background-repeat: no-repeat;
-                    &:hover {
-                        opacity: 0.7;
-                    }
-                    &.active {
-                        position: absolute;
-                        bottom: 0;
-                        right: calc(100% - 250px);
-                        z-index: 1;
-                        display: block;
+                    .search-btn {
+                        position: relative;
                         width: 30px;
                         height: 30px;
-                        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20"><style>.st2{fill:none;stroke:%23666666;stroke-width:1.8;stroke-linecap:round}</style><g><path class="st2" d="M3 2.5l15 15M18 2.5l-15 15"/></g></svg>');
-                        background-size: 50%;
+                        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" xml:space="preserve"><g transform="translate(-1160.543 -67.822)"><circle cx="1168.5" cy="75.39" r="7.5" fill="none"/><circle cx="1168.5" cy="75.39" r="6.58" fill="none" stroke="%234b4b4b" stroke-width="1.8" /><path fill="none" stroke="%234b4b4b" stroke-width="1.8" d="M1172.5 80.39l6 6"/></g></svg>');
+                        background-position: 50% 50%;
+                        background-size: 20px;
+                        background-repeat: no-repeat;
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                        &.active {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            z-index: 1;
+                            display: block;
+                            width: 30px;
+                            height: 30px;
+                            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20"><style>.st2{fill:none;stroke:%23666666;stroke-width:1.8;stroke-linecap:round}</style><g><path class="st2" d="M3 2.5l15 15M18 2.5l-15 15"/></g></svg>');
+                            background-size: 50%;
+                        }
                     }
                 }
             }
@@ -141,7 +143,6 @@
         .menu {
             ul {
                 display: flex;
-                flex-basis: 70%;
                 gap: 50px;
                 li {
                     a {
