@@ -9,7 +9,7 @@
                             <a href="https://github.com/jjong-developer" target="_blank">github</a>
                         </li>
                         <li>
-                            <a href="https://jjong-developer.github.io/" target="_blank">portfolio</a>
+                            <a href="https://jjong-portfolio.web.app/" target="_blank">portfolio</a>
                         </li>
                         <li>
                             <a href="https://mail.google.com/mail/u/0/?fs=1&to=jongwook2.kim@gmail.com&tf=cm" target="_blank">mail</a>
