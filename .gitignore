@@ -1,6 +1,7 @@
 # firebase
 .firebase
 .firebaserc
+firebase.json
 
 # Logs
 logs
@@ -32,3 +33,5 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+readme.txt

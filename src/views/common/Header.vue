@@ -21,11 +21,11 @@
                 <div class="navi-utils">
                     <input type="text" name="search" autocomplete="off" class="search-keyword" placeholder="검색어를 입력해주세요." />
                     <button type="button" class="search-btn" @click="searchHandler($event)"></button>
-                    <a href="https://jjong-developer.github.io/" target="_blank" class="link-btn-type-1">Introduction</a>
+                    <a href="https://jjong-portfolio.web.app/" target="_blank" class="link-btn-type-1">Introduction</a>
                     <RouterLink :to="{ name: 'signin' }" class="link-btn-type-1">Sign in</RouterLink>
                 </div>
 <!--                <div class="navi-interface">-->
-<!--                    <a href="https://jjong-developer.github.io/" target="_blank" class="link-btn-type-1">Introduction</a>-->
+<!--                    <a href="https://jjong-portfolio.web.app/" target="_blank" class="link-btn-type-1">Introduction</a>-->
 <!--                    <RouterLink :to="{ name: 'signin' }" class="link-btn-type-1">Sign in</RouterLink>-->
 <!--                </div>-->
             </div>
