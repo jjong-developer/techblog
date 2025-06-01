@@ -145,3 +145,18 @@
     <!-- // 관련 게시글 보기 -->
 </template>
 
+<script lang="ts" setup>
+import { onMounted } from 'vue'
+import { useCommon } from '@/composable/useCommon'
+
+const { sympathyToggle } = useCommon()
+
+onMounted(() => {
+    sympathyToggle()
+})
+</script>
+
+<style lang="scss" scoped>
+
+</style>
+
